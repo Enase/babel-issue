@@ -20,7 +20,6 @@ module.exports = {
   plugins: [
     'styled-components',
     '@babel/plugin-transform-runtime',
-    // '@babel/plugin-proposal-class-properties',
     '@babel/plugin-transform-react-jsx',
     '@babel/plugin-syntax-dynamic-import',
     '@babel/plugin-proposal-export-namespace-from',
@@ -28,15 +27,4 @@ module.exports = {
     ['@babel/plugin-proposal-class-properties', { loose: true }],
     ['@babel/plugin-proposal-private-methods', { loose: true }],
   ],
-  env: {
-    production: {
-      only: ['app'],
-      plugins: [
-        'lodash',
-        'transform-react-remove-prop-types',
-        '@babel/plugin-transform-react-inline-elements',
-        '@babel/plugin-transform-react-constant-elements',
-      ],
-    },
-  },
 };
