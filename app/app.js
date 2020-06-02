@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Amplify from 'aws-amplify';
-Amplify.Logger.LOG_LEVEL = process.env.AMPLIFY_LOGGER_LOG_LEVEL;
+Amplify.Logger.LOG_LEVEL = 'INFO';
 
 const MOUNT_NODE = document.getElementById('app');
 

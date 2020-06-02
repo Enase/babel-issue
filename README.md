@@ -2,18 +2,18 @@
 
 **Steps to reproduce:**
 
-1. `git clone https://github.com/Enase/babel-issue.git`
-2. `npm i`
-3. `npm run start`
+1. Run `git clone https://github.com/Enase/babel-issue.git`
+2. Run `npm i` in project root
+3. Run `npm run start` in project root
 4. Open `http://localhost:3000` in browser
 
 **Expected result:**
 
-`Hello` message in browser.
+`Hello` message in a browser.
 
 **Actual result result:**
 
-Error in browser:
+Error in a browser:
 ```
 Uncaught TypeError: Cannot read property 'register' of undefined
     at new APIClass (API.js?0f51:80)

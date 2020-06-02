@@ -4,7 +4,6 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const Dotenv = require('dotenv-webpack');
 
 module.exports = (options) => ({
   mode: options.mode,
@@ -52,10 +51,6 @@ module.exports = (options) => ({
     ],
   },
   plugins: options.plugins.concat([
-    new Dotenv({
-      defaults: path.resolve(process.cwd(), '.env.defaults'),
-      path: path.resolve(process.cwd(), `.env.${options.mode === 'production' ? 'prod' : 'dev'}`),
-    }),
     // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
     // inside your code for any environment checks; Terser will automatically
     // drop any unreachable code.
